@@ -1,0 +1,44 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gmit="http://sw.gmit.ie" targetNamespace="http://sw.gmit.ie" elementFormDefault="qualified">
+  <xsd:element name='comment' type='xsd:string'/>
+
+  <xsd:element name='Order' type='gmit:Order'/>
+
+  <xsd:complexType name='Car'>
+    <xsd:annotation>
+      <xsd:documentation>
+        Car schema
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name='CarID'   type='xsd:integer'/>
+      <xsd:element name='Make' type='xsd:string'/>
+      <xsd:element name='Model'   type='xsd:string'/>
+      <xsd:element name='Price'  type='xsd:double'/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:complexType name='Customer'>
+    <xsd:annotation>
+      <xsd:documentation>
+        Customer schema.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name='ID'   type='xsd:integer'/>
+      <xsd:element name='Name' type='xsd:string'/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+  
+
+  <xsd:complexType name='Order'>
+    <xsd:sequence>
+      <xsd:element name='Customer' type='gmit:Customer'/>
+      <xsd:element name='Car' type='gmit:Car'/>
+      <xsd:element name='StartDate'  type='xsd:date'/>
+      <xsd:element name='ReturnDate'  type='xsd:date'/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+</xsd:schema>
