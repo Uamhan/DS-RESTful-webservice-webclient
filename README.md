@@ -16,7 +16,7 @@ the RMI database server has database CRUD functionality implemented in remotely 
 1. Create Maven project in Eclipse Enterprise Edition. which can be downloaded at https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-java-ee-developers
 2. Download and install TomCat and add the server to your eclipse enviorment. the newest version of tomcat can be downloaded at
 https://tomcat.apache.org/download-70.cgi
-3.In your maven eclipse project you should find pom.xml file you must add the jersey dependancey to this file as follows.
+3. In your maven eclipse project you should find pom.xml file you must add the jersey dependancey to this file as follows.
 ```
 <dependency>
 <groupId>com.sun.jersey</groupId>
@@ -36,7 +36,7 @@ https://tomcat.apache.org/download-70.cgi
 ```
 4. import the java files found in this repository at/sw/src/main/java/ie/gmit/sw/ into a package that matches the package name
 package ie.gmit.sw
-5.import the jsp files found in this repositoy at /sw/src/main/webapp/ into the webapp folder of your reposity.
+5. import the jsp files found in this repositoy at /sw/src/main/webapp/ into the webapp folder of your reposity.
 6. import jar files found in the lib folder of this directory into your enviorment class path.
 ---
 ## Running.
