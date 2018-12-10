@@ -19,7 +19,8 @@ public class ServiceSetup extends DatabaseServiceImpl {
 	         LocateRegistry.createRegistry(1099);
 	         Registry registry = LocateRegistry.getRegistry("localhost",1099); 
 	         
-	         registry.bind("databaseservice", stub);  
+	         registry.bind("databaseservice", stub); 
+			 //prints server ready message 
 	         System.err.println("Server ready"); 
 	      } catch (Exception e) { 
 	         System.err.println("Server exception: " + e.toString()); 
