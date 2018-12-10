@@ -242,14 +242,6 @@ public class DatabaseServiceImpl implements DatabaseService{
 	        order.setCustomer(customer);
 	        order.setStartDate(start);
 	        order.setReturnDate(end);
-	    	
-	    	
-
-	        //Order order = new Order();
-	        //order.setCar(car);
-	        //order.setCustomer(customer);
-	        //order.setStartDate(start);
-	        //order.setReturnDate(end);
 	        
 	        list.add(order);
 	        
