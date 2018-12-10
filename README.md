@@ -34,12 +34,12 @@ https://tomcat.apache.org/download-70.cgi
 <version>6.0.44</version>
 </dependency>
 ```
-4.import the java files found in this repository at/sw/src/main/java/ie/gmit/sw/ into a package that matches the package name
+4. import the java files found in this repository at/sw/src/main/java/ie/gmit/sw/ into a package that matches the package name
 package ie.gmit.sw
 5.import the jsp files found in this repositoy at /sw/src/main/webapp/ into the webapp folder of your reposity.
 6. import jar files found in the lib folder of this directory into your enviorment class path.
 ---
-##Running.
+## Running.
 To run this application simply right click on the servicesetup java file and run as a java application this will start the rmi server.
 the project can then be run on your installed tomcat server.
 
